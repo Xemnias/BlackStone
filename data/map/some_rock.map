@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MAP>
+  <size witdh="1024" height="512" />
+  <block x="32" y="64">1</block>
+  <block x="64" y="64">2</block>
+  <block x="96" y="64">3</block>
+  <block x="128" y="64">4</block>
+  <block x="160" y="64">6</block>
+  <entity x="320" y="224">0</entity>
+</MAP>

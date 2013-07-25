@@ -1,0 +1,13 @@
+<NPJ>
+	<name>Peter</name>
+	<skin>peter01.png</skin>
+	<dialog>peter01.txt</dialog>
+	<icon>marchand</icon>
+	<id>0</id>
+	<job>seller</job>
+	
+	<inventory>
+		<item>0</item>
+		<item>1</item>
+	</inventory>
+</NPJ>
