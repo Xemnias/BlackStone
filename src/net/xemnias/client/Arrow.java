@@ -1,11 +1,17 @@
 package net.xemnias.client;
 
+import org.newdawn.slick.geom.Rectangle;
+
 public class Arrow 
 {
 	private Image img;
-	private float angle;
-	private float x, y;
+	float angle;
+	public float x;
+	public float y;
+	public int SPEED = 3;
+	public boolean isStopped= false;
 	public long time;
+	Rectangle box;
 	
 	public Arrow(double xArrow, double yArrow, double angleRadian) 
 	{

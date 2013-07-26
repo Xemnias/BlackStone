@@ -11,7 +11,7 @@ public abstract class GuiContainer extends GuiDialog
 	protected ArrayList<ItemSlot> slots = new ArrayList<ItemSlot>();
 	protected boolean haveItemOnMouse = false;
 	protected Item itemOnMouse = null;
-	public boolean renderEquipementSlot;
+	public boolean renderEquipementSlot = true;
 	
 	public ItemSlot whatCaseClick(GameContainer gc)
 	{

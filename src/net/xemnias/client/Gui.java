@@ -73,6 +73,15 @@ public abstract class Gui
 		g.fillRect(x, y, w, h);
 	}
 	
+
+	protected void fillRoundRectWithAlphaColor(Graphics g, float x, float y, int w, int h, float f, int rad, Color c) {
+
+		Color cA = new Color(c.getRed(), c.getGreen(), c.getBlue(), f);
+		g.setColor(cA);
+		g.fillRoundRect(x, y, w, h, rad);
+	}
+
+	
 	protected abstract void render(GameContainer gc, BlackStone bs, Graphics g);
 	
 	protected abstract void update(GameContainer gc, BlackStone bs, int delta);

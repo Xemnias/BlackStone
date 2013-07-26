@@ -2,21 +2,27 @@ package net.xemnias.client;
 
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
+import org.newdawn.slick.SlickException;
 
 public class GuiTabBuy extends GuiTab 
 {
 	private GuiNPCSeller parent;
-	
+	private Image coin;
 	public GuiTabBuy(String name, GuiTabbed parents, GuiNPCSeller g) 
 	{
 		super(name, parents);
 		parent = g;
-		
+		try {
+			coin = new Image("old data/coin.png");
+		} catch (SlickException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
 	protected void render(GameContainer gc, BlackStone bs, Graphics g) 
 	{
+		coin.draw(x+10, y+10);
 		drawStringWithColor("0xFFFFFFVendeur : (Or du vendeur : $"+parent.npc.sellerMoney +")", x+32, y+10, g);
 		drawStringWithColor("0xFFFFFFJoueur : (Or du joueur : $"+bs.getPlayer().getMoney() +")", x+32, y+157, g);
 		parent.renderSlots(gc, bs, g);

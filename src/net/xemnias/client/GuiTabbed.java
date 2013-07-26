@@ -43,6 +43,7 @@ public class GuiTabbed extends Gui
 
 	protected void render(GameContainer gc, BlackStone bs, Graphics g) 
 	{
+		fillRoundRectWithAlphaColor(g, x+3, y+3, w, h,0.5f,7, Color.black);
 		drawRoundRectWithColor(g, x, y, w, h, 7, Color.black);
 		fillRoundRectWithColor(g, x+1, y+1, w-1, h-1, 7, Color.gray);
 		int spacin =0;
@@ -53,13 +54,15 @@ public class GuiTabbed extends Gui
 			{
 
 				fillRoundRectWithColor(g, x+8+spacin, y-18, widthOfTab, 19, 7, Color.gray);
+				drawRoundRectWithColor(g, x+8+spacin, y-18, widthOfTab, 19, 7, Color.black);
+				drawRectWithColor(g, x+12+spacin, y, widthOfTab-8, 1, Color.gray);
 			}
 			else
 			{
 
 				fillRoundRectWithColor(g, x+8+spacin, y-16, widthOfTab, 16, 7, Color.lightGray);
 			}
-			g.setColor(Color.black);
+			g.setColor(Color.decode("#E0E0E0"));
 			drawCenteredString(t.tabName, spacin + x+8+widthOfTab/2, y-10, g);
 			if(t.isNotSet)
 			{

@@ -36,9 +36,10 @@ public class ItemSlot extends GuiCompoment
 		{
 			caseColor = Color.gray;
 		}
-		
-		drawRectWithColor(g, getX(), getY(), 32, 32, Color.black);
-		fillRectWithColor(g, getX()+1, getY()+1, 31, 31, caseColor);
+
+		fillRoundRectWithAlphaColor(g, getX()+3, getY()+3, 31, 31,0.7f,4, Color.black);
+		drawRoundRectWithColor(g, getX(), getY(), 32, 32,4, Color.black);
+		fillRoundRectWithColor(g, getX()+1, getY()+1, 31, 31,4, caseColor);
 		
 		if(item != null)
 		{
@@ -98,8 +99,10 @@ public class ItemSlot extends GuiCompoment
 			caseColor = Color.gray;
 		}
 		
-		drawRectWithColor(g, getX(), getY(), 32, 32, Color.black);
-		fillRectWithColor(g, getX()+1, getY()+1, 31, 31, caseColor);
+
+		fillRoundRectWithAlphaColor(g, getX()+3, getY()+3, 31, 31,0.7f,4, Color.black);
+		drawRoundRectWithColor(g, getX(), getY(), 32, 32,4, Color.black);
+		fillRoundRectWithColor(g, getX()+1, getY()+1, 31, 31,4, caseColor);
 		
 		if(item != null)
 		{
